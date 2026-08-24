@@ -1,0 +1,135 @@
+\t (00:00:05) allegro_free_viewer 24.1 P001 (4234998) [9/4/2024] Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Thu Aug  6 14:24:52 2026
+\t (00:00:05)         Host=DESKTOP-60VH299 User=ivy Pid=24504 CPUs=32
+\t (00:00:05) CmdLine= D:\cadence\spb_24.1\tools\bin\allegro_free_viewer.exe D:\RK3568\RK3568官方硬件资料包\01_Official Release\02_DDR Template\RK3568_Template_LP4XD200P132SD6_43x28_1600MHz\RK3568_Template_LP4XD200P132SD6_43x28_1600MHz_V10_20210201.brd
+\t (00:00:05) 
+\t (00:00:05) Opening existing design...
+\e (00:00:05) ERROR(SPMHDB-181): The current version of software is unable to open design D:/RK3568/RK3568官方硬件资料包/01_Official Release/02_DDR Template/RK3568_Template_LP4XD200P132SD6_43x28_1600MHz/RK3568_Template_LP4XD200P132SD6_43x28_1600MHz_V10_20210201.brd.
+The design was last saved using version 16.6 and must be updated using DB Doctor. [help]
+\e (00:00:05) ERROR(SPMHDB-181): The current version of software is unable to open design D:/RK3568/RK3568官方硬件资料包/01_Official Release/02_DDR Template/RK3568_Template_LP4XD200P132SD6_43x28_1600MHz/RK3568_Template_LP4XD200P132SD6_43x28_1600MHz_V10_20210201.brd.
+The design was last saved using version 16.6 and must be updated using DB Doctor. [help]
+\i (00:04:09) fillin confirm
+\t (00:04:09) Starting new design...
+\i (00:04:09) trapsize 1051
+\i (00:04:10) trapsize 1059
+\i (00:04:10) updateport PropPane
+\i (00:04:10) updateport VisibilityPane
+\i (00:04:10) ucpedit 
+\i (00:04:10) updateport VisibilityPane
+\i (00:04:13) trapsize 738
+\i (00:04:20) QtSignal VisibilityLayersWidget VisLayersObjectsAccordion headerClicked 0
+\i (00:04:23) QtSignal VisibilityLayersWidget VisLayersGeomsAccordion headerClicked 0
+\i (00:04:23) QtSignal VisibilityLayersWidget VisLayersGeomsAccordion headerClicked 1
+\i (00:04:25) QtSignal VisibilityLayersWidget VisLayersObjectsAccordion headerClicked 1
+\i (00:04:30) pick grid 10516.1 3825.4
+\t (00:04:30) last pick:  10516.1 3825.4
+\i (00:04:30) pick grid dbl 10516.1 3825.4
+\t (00:04:30) last pick:  10516.1 3825.4
+\i (00:04:30) drag_start grid 8418.8 8743.7
+\i (00:04:31) drag_stop 13647.3 4682.0
+\i (00:04:32) pick grid 12790.6 8093.8
+\t (00:04:32) last pick:  12790.6 8093.8
+\i (00:04:33) zoom out 1 
+\i (00:04:33) setwindow pcb
+\i (00:04:33) zoom out 1521.3 14518.7
+\i (00:04:33) trapsize 738
+\i (00:04:33) zoom out 1 
+\i (00:04:33) setwindow pcb
+\i (00:04:33) zoom out 1447.4 14430.1
+\i (00:04:33) trapsize 738
+\i (00:04:33) zoom out 1 
+\i (00:04:33) setwindow pcb
+\i (00:04:33) zoom out 1403.1 14267.6
+\i (00:04:33) trapsize 738
+\i (00:05:28) QtSignal PropertyVoidCtrl_Indiv_Square minWeb editingFinished "4.00"
+\i (00:05:28) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:37) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:38) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:38) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:38) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:38) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:38) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:39) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:39) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:39) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:39) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:39) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 false +
+\i (00:05:39) QtSignal 1 f
+\i (00:05:40) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:40) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:40) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 false +
+\i (00:05:40) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:41) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:41) QtSignal 1 f
+\i (00:05:42) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:42) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 false +
+\i (00:05:42) QtSignal 1 f
+\i (00:05:43) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:43) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:43) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:44) pick grid 2259.8 15360.6
+\t (00:05:44) last pick:  2259.8 15360.6
+\i (00:05:44) QtSignal VisibilityLayersViewsWidget All_Off clicked
+\i (00:05:44) updateport SearchPane
+\i (00:05:44) updateport PropPane
+\i (00:05:44) updateport VisibilityPane
+\i (00:05:44) updateport CVPane
+\i (00:05:44) updateport VisibilityPane
+\i (00:05:45) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:45) updateport SearchPane
+\i (00:05:45) updateport PropPane
+\i (00:05:45) updateport VisibilityPane
+\i (00:05:45) updateport CVPane
+\i (00:05:45) updateport VisibilityPane
+\i (00:05:46) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:46) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:48) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:48) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:48) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 false +
+\i (00:05:48) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayersViewsWidget keyPressEvent 70 0 true +
+\i (00:05:49) QtSignal 1 f
+\i (00:05:49) QtSignal VisibilityLayersViewsWidget All_On clicked
+\i (00:05:49) QtSignal VisibilityLayersWidget VisibilityLayers

@@ -1,0 +1,19 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Create_devices LOG file                                          )
+(                                                                     )
+(    Drawing          : 30.brd                                        )
+(    Software Version : 16.6-2015S066                                 )
+(    Date/Time        : Thu Feb 04 11:11:21 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+Device file 'E:/lib/resistor_r0402_0r.txt': written successfully.
+Device file 'E:/lib/imx528_0_ok-118rf040_2-35_imx52.txt': written successfully.
+Device file 'E:/lib/tp_tp_0r50_tp_05.txt': written successfully.
+Device file 'E:/lib/cmk-cb0077-fv1_2_con30m_2x15_0r.txt': written successfully.
+
+  Created device files: 4
+

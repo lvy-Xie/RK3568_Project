@@ -1,0 +1,79 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 16.6-2015S066                                 )
+(    Date/Time        : Thu Feb 04 11:11:20 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: E:/1/30.brd ***
+
+
+
+  *** Creating all device files (see create_devices.log) ***
+
+
+  *** Creating padstacks. ***
+
+  S_R0R23X1R00 being dumped.
+
+  S_R0R20X0R50 being dumped.
+
+  S_R2R20X3R30 being dumped.
+
+  S_R0R25X4R00 being dumped.
+
+  S_O0R80X0R15 being dumped.
+
+  S_R0R25X1R60 being dumped.
+
+  S_R0R15X0R80 being dumped.
+
+  S_R0R80X0R15 being dumped.
+
+  S_R0R23X0R85 being dumped.
+
+  S_R0R65X0R35 being dumped.
+
+  S_R0R45X0R66 being dumped.
+
+  S_R0R96X0R43 being dumped.
+
+  S_R0R25X0R435 being dumped.
+
+  S_R0R16X0R435 being dumped.
+
+  S_C0R30 being dumped.
+
+  S_C0R50 being dumped.
+
+  S_S0R55 being dumped.
+
+  S_S5R60 being dumped.
+
+  0402 being dumped.
+
+  0503 being dumped.
+
+
+  *** Creating package symbols (.dra and .psm) ***
+
+  bga144_8r00x8r00x1r15 being dumped.
+
+  bga636_19r00x19r00x1r20 being dumped.
+
+  qfn68_7r00x7r00x0r80_t being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:               20
+Number of package symbols dumped:          3
+
+Total number of symbols dumped:            3
+*****************************************************
+

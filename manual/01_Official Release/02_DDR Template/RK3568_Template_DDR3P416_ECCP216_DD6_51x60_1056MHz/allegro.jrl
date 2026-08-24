@@ -1,0 +1,22 @@
+\t (00:00:18) allegro 24.1 P001 (4234998) [9/4/2024] Windows SPB 64-bit Edition
+\t (00:00:18)     Journal start - Mon Jul 20 23:06:56 2026
+\t (00:00:18)         Host=DESKTOP-60VH299 User=ivy Pid=29820 CPUs=32
+\t (00:00:18) CmdLine= d:\cadence\spb_24.1\tools\bin\allegro.exe D:\RK3568\RK3568官方硬件资料包\01_Official Release\02_DDR Template\RK3568_Template_DDR3P416_ECCP216_DD6_51x60_1056MHz\RK3568_Template_DDR3P416_ECCP216_DD6_51x60_1056MHz_V10_20210201.brd
+\t (00:00:18) 
+\t (00:00:18) Loading axlcore.cxt 
+\t (00:00:19) Opening existing design...
+\e (00:00:19) ERROR(SPMHDB-181): The current version of software is unable to open design D:/RK3568/RK3568官方硬件资料包/01_Official Release/02_DDR Template/RK3568_Template_DDR3P416_ECCP216_DD6_51x60_1056MHz/RK3568_Template_DDR3P416_ECCP216_DD6_51x60_1056MHz_V10_20210201.brd.
+The design was last saved using version 16.6 and must be updated using DB Doctor. [help]
+\e (00:00:19) ERROR(SPMHDB-181): The current version of software is unable to open design D:/RK3568/RK3568官方硬件资料包/01_Official Release/02_DDR Template/RK3568_Template_DDR3P416_ECCP216_DD6_51x60_1056MHz/RK3568_Template_DDR3P416_ECCP216_DD6_51x60_1056MHz_V10_20210201.brd.
+The design was last saved using version 16.6 and must be updated using DB Doctor. [help]
+\i (00:00:26) fillin confirm
+\t (00:00:26) Starting new design...
+\i (00:00:27) trapsize 116667
+\i (00:00:27) generaledit 
+\i (00:00:36) trapsize 556
+\i (00:00:36) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged unnamed
+\i (00:00:36) opencd d:/cadence/spb_24.1/share/pcb/examples/board_design/Cadence_Demo.brd 
+\t (00:00:36) Opening existing design...
+\i (00:00:41) fillin yes 
+\i (00:00:41) trapsize 1474
+\t (00:00:41)     Journal end - Mon Jul 20 23:07:19 2026
