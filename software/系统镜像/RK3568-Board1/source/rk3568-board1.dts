@@ -1,0 +1,254 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Device tree for the RK3568 Board1 V1.0 schematic (24 sheets,
+ * last updated 2026-08-14).
+ *
+ * The power tree is derived from the RK3568 EVB1 because Board1 uses the
+ * same RK809-5 rail assignment and the same I2C CPU regulator topology.
+ */
+
+/dts-v1/;
+
+#include <dt-bindings/input/input.h>
+#include "rk3568-evb1-v10.dts"
+
+/ {
+	model = "RK3568 Board1 V1.0";
+	compatible = "board1,rk3568-board1", "rockchip,rk3568";
+
+	aliases {
+		/delete-property/ ethernet1;
+		ethernet0 = &gmac0;
+		mmc0 = &sdhci;
+		mmc1 = &sdmmc0;
+	};
+
+	adc-keys {
+		compatible = "adc-keys";
+		io-channels = <&saradc 0>;
+		io-channel-names = "buttons";
+		keyup-threshold-microvolt = <1800000>;
+
+		recovery-key {
+			label = "Recovery";
+			linux,code = <KEY_VENDOR>;
+			press-threshold-microvolt = <100000>;
+		};
+	};
+
+	backlight: backlight {
+		compatible = "pwm-backlight";
+		brightness-levels = <
+			0  8  16  24  32  40  48  56
+			64 72 80 88 96 104 112 120
+			128 136 144 152 160 168 176 184
+			192 200 208 216 224 232 240 255
+		>;
+		default-brightness-level = <16>;
+		power-supply = <&dc_12v>;
+		pwms = <&pwm4 0 25000 0>;
+		status = "okay";
+	};
+
+	/delete-node/ leds;
+	leds {
+		compatible = "gpio-leds";
+		pinctrl-names = "default";
+		pinctrl-0 = <&charge_led_pin &wifi_led_pin>;
+
+		charge-led {
+			label = "red:charge";
+			gpios = <&gpio0 RK_PC2 GPIO_ACTIVE_HIGH>;
+		};
+
+		wifi-led {
+			label = "red:wlan";
+			gpios = <&gpio0 RK_PA0 GPIO_ACTIVE_HIGH>;
+			linux,default-trigger = "phy0radio";
+		};
+	};
+};
+
+/* USB3 OTG0 SuperSpeed pairs are not routed, but its USB2 Type-C port is. */
+&combphy0 {
+	status = "okay";
+};
+
+/* USB3 HOST1 SuperSpeed pairs are routed to the USB-A connector. */
+&combphy1 {
+	status = "okay";
+};
+
+/* MULTI_PHY2 is wired as PCIe 2.0 x1. */
+&combphy2 {
+	status = "okay";
+};
+
+&gmac0 {
+	phy-mode = "rgmii-txid";
+	phy-handle = <&board1_rgmii_phy0>;
+	/* RTL8211F strap enables TX delay and disables RX delay. */
+	tx_delay = <0x00>;
+	rx_delay = <0x10>;
+	status = "okay";
+};
+
+/* GMAC1 data lanes are not routed; only four sideband signals reach FPC4. */
+&gmac1 {
+	status = "disabled";
+};
+
+/* The touch connector is unpopulated and does not identify a controller. */
+&touchscreen0 {
+	status = "disabled";
+};
+
+/* Touch-panel connector: I2C1 plus GPIO0_B5 interrupt/GPIO0_B6 reset. */
+&i2c1 {
+	status = "okay";
+};
+
+/* Camera connector: I2C2 M1 plus GPIO3_D4 reset. */
+&i2c2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c2m1_xfer>;
+	status = "okay";
+};
+
+/* FPC1 expansion connector. */
+&i2c3 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&i2c3m0_xfer>;
+	status = "okay";
+};
+
+&mdio0 {
+	/delete-node/ ethernet-phy@0;
+
+	board1_rgmii_phy0: ethernet-phy@1 {
+		compatible = "ethernet-phy-id001c.c916",
+			     "ethernet-phy-ieee802.3-c22";
+		reg = <0x1>;
+		interrupt-parent = <&gpio3>;
+		interrupts = <RK_PC0 IRQ_TYPE_LEVEL_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&gmac0_phy_int_pin &gmac0_phy_reset_pin>;
+		reset-assert-us = <20000>;
+		reset-deassert-us = <100000>;
+		reset-gpios = <&gpio3 RK_PB7 GPIO_ACTIVE_LOW>;
+	};
+};
+
+&pcie2x1 {
+	num-lanes = <1>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pcie20_board1_pins>;
+	reset-gpios = <&gpio3 RK_PC1 GPIO_ACTIVE_HIGH>;
+	status = "okay";
+};
+
+&pinctrl {
+	display {
+		lcd_reset_pin: lcd-reset-pin {
+			rockchip,pins =
+				<3 RK_PC7 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+
+	ethernet {
+		gmac0_phy_int_pin: gmac0-phy-int-pin {
+			rockchip,pins =
+				<3 RK_PC0 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+
+		gmac0_phy_reset_pin: gmac0-phy-reset-pin {
+			rockchip,pins =
+				<3 RK_PB7 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+	};
+
+	leds {
+		charge_led_pin: charge-led-pin {
+			rockchip,pins =
+				<0 RK_PC2 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+
+		wifi_led_pin: wifi-led-pin {
+			rockchip,pins =
+				<0 RK_PA0 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+
+	pcie {
+		pcie20_board1_pins: pcie20-board1-pins {
+			rockchip,pins =
+				/* PCIE20_CLKREQn_M1 */
+				<2 RK_PD0 4 &pcfg_pull_none>,
+				/* PCIE20_PERSTn_M1, driven as GPIO */
+				<3 RK_PC1 RK_FUNC_GPIO &pcfg_pull_none>,
+				/* PCIE20_WAKEn_M1 */
+				<2 RK_PD1 4 &pcfg_pull_none>;
+		};
+	};
+
+	usb {
+		vcc5v0_usb_otg_board1_en: vcc5v0-usb-otg-board1-en {
+			rockchip,pins =
+				<0 RK_PD6 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+};
+
+&pwm4 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pwm4_pins>;
+	status = "okay";
+};
+
+&uart0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart0_xfer>;
+	status = "okay";
+};
+
+/* Type-C U16 is USB2-only and USB3_OTG0_ID is left unconnected. */
+&usb_host0_xhci {
+	extcon = <&usb2phy0>;
+	status = "okay";
+};
+
+/* USB2_HOST3 is marked no-connect on the schematic. */
+&usb_host0_ehci {
+	status = "disabled";
+};
+
+&usb_host0_ohci {
+	status = "disabled";
+};
+
+&usb_host1_xhci {
+	status = "okay";
+};
+
+&usb2phy0_otg {
+	phy-supply = <&vcc5v0_usb_otg>;
+	status = "okay";
+};
+
+&usb2phy1_otg {
+	status = "disabled";
+};
+
+&vcc5v0_usb_otg {
+	gpios = <&gpio0 RK_PD6 GPIO_ACTIVE_HIGH>;
+	pinctrl-0 = <&vcc5v0_usb_otg_board1_en>;
+};
+
+/* Board1 powers the LCD connector directly; these EVB-only switches are absent. */
+&vcc3v3_lcd0_n {
+	status = "disabled";
+};
+
+&vcc3v3_lcd1_n {
+	status = "disabled";
+};

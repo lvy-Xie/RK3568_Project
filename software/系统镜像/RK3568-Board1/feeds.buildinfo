@@ -1,0 +1,4 @@
+src-git packages https://github.com/coolsnowwolf/packages^c9999a8
+src-git luci https://github.com/coolsnowwolf/luci.git^9f2b84a
+src-git routing https://github.com/coolsnowwolf/routing^56d7a81
+src-git telephony https://github.com/coolsnowwolf/telephony.git^a04b7ac

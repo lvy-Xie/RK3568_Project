@@ -1,0 +1,4 @@
+7995bf1eae111886a795323f1b7b87bf8b926a24c3eb0492ab6be857365db946 *openwrt-rockchip-armv8-board1-ext4-sysupgrade.img.gz
+d3ea08f382832825239c5f5b85458e64cf50723af69b25b518715c0a26f1bd78 *openwrt-rockchip-armv8-board1-squashfs-sysupgrade.img.gz
+3ce3413b31c8332f988c02e4a4d83412a2d65dc3147522947b431977bfdb3950 *openwrt-rockchip-armv8-board1.manifest
+acf3483b052f6a6ad8f175d64c1ba136d008cc5d77b1e0144224234c759de28c *image-rk3568-board1.dtb
