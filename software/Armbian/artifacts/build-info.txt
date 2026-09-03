@@ -1,0 +1,11 @@
+Build date: 2026-09-02
+Armbian build revision: fe0ad5fdf
+Armbian revision: 26.11.0-trunk
+Board: rk3568-schematic1
+Release: trixie
+Kernel branch: current
+Kernel: 6.18.49-current-rockchip64
+U-Boot: v2026.04
+Image size: 2868903936 bytes
+Build result: successful
+Hardware validation: not started

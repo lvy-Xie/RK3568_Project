@@ -1,0 +1,10 @@
+# Local credentials and editor files
+.env
+.env.*
+*.swp
+*~
+
+# Local build logs and oversized Armbian images
+*.log
+software/Armbian/artifacts/*.img
+software/Armbian/artifacts/*.img.*
