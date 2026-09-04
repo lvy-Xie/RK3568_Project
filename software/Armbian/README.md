@@ -46,6 +46,16 @@ set -o pipefail
 ```text
 Armbian-unofficial_26.11.0-trunk_Rk3568-schematic1_trixie_current_6.18.49.img
 SHA256 934dcf5da4ddee93a7ff4aa566401764422ce1888d2e14c30c1bb68e59384091
+
+Armbian-unofficial_26.11.0-trunk_Rk3568-schematic1_trixie_current_6.18.49.img.xz
+SHA256 268f87fdeb1231b4f11cdf8660b3385fa64b9c681b00005dfaf9800d5c622dd6
 ```
 
-完整镜像为 2,868,903,936 字节，未提交到 GitHub。详见 [artifacts/SHA256SUMS](artifacts/SHA256SUMS) 和 [完整移植文档](PORTING.md)。
+原始镜像为 2,868,903,936 字节；压缩镜像通过 [GitHub Release](https://github.com/lvy-Xie/RK3568_Project/releases/tag/armbian-26.11.0-trunk-rk3568-schematic1) 下载。下载后执行：
+
+```bash
+sha256sum -c software/Armbian/artifacts/SHA256SUMS --ignore-missing
+xz -dk Armbian-unofficial_26.11.0-trunk_Rk3568-schematic1_trixie_current_6.18.49.img.xz
+```
+
+详见 [artifacts/SHA256SUMS](artifacts/SHA256SUMS) 和 [完整移植文档](PORTING.md)。

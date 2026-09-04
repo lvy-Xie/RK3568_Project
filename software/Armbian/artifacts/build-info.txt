@@ -7,5 +7,7 @@ Kernel branch: current
 Kernel: 6.18.49-current-rockchip64
 U-Boot: v2026.04
 Image size: 2868903936 bytes
+Compressed image: Armbian-unofficial_26.11.0-trunk_Rk3568-schematic1_trixie_current_6.18.49.img.xz
+Compressed size: 623655956 bytes
 Build result: successful
 Hardware validation: not started

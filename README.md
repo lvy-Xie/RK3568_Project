@@ -60,7 +60,7 @@ RK3568_Project/
 
 ## 镜像说明
 
-Armbian 完整镜像约 2.68 GiB，超过普通 GitHub 文件限制，因此仓库只保存可复现的构建输入、文件名和 SHA256，不把 `.img` 提交进 Git 历史。OpenWrt 的历史压缩镜像体积较小，保留在 `software/OpenWrt/images/`，但其旧 DTS 尚未包含最新硬件审计修正，使用前务必阅读对应 README。
+Armbian 原始镜像约 2.68 GiB，压缩后的 `.img.xz` 约 595 MiB，仍超过普通 GitHub 单文件限制。因此压缩镜像通过 [GitHub Releases](https://github.com/lvy-Xie/RK3568_Project/releases) 分发，不写入 Git 历史；仓库保存可复现的构建输入及原始、压缩镜像的 SHA256。OpenWrt 的历史压缩镜像体积较小，保留在 `software/OpenWrt/images/`，但其旧 DTS 尚未包含最新硬件审计修正，使用前务必阅读对应 README。
 
 ## 第三方资料与许可证
 
